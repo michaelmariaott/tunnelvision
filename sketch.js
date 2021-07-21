@@ -18,10 +18,10 @@ function setup() {
 function draw() {
   background(0);
   if(getAudioContext().state == "suspended") {
-    text("klick starts listening / f controls fullscreen", 5, 15);
+    text("klick starts listening (chrome only)/ f controls fullscreen", 5, 15);
     micLevel = 0;
   } else {
-    text("klick stops listening / f controls fullscreen", 5, 15);
+    text("klick stops listening (chrome only)/ f controls fullscreen", 5, 15);
     micLevel = mic.getLevel();
   }
   noFill();
